@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@600&family=Libre+Barcode+39&family=Roboto:wght@100&display=swap");
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Libre Barcode 39', cursive;
+font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+  background-image: linear-gradient(
+    230deg,
+    rgb(162, 75, 207),
+    rgb(75, 121, 207),
+    rgb(75, 197, 207)
+  ); */
+  background: linear-gradient(270deg, #a24bcf, #4b79cf);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.gameHeading {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Josefin Sans", sans-serif; */
+  font-size: 3.5rem;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+.players {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.txtPlayer {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.gameContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+  /* border: none; */
+}
+.cell {
+  background-color: #fff;
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  /* box-shadow: 0 0 0 1px #333333; */
+  /* border: 2px solid #333333; */
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+}
+.score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#plyaersturn {
+  display: flex;
+  justify-content: center;
+}
+#result {
+  display: flex;
+  justify-content: center;
+}
+.btnGrp {
+  display: flex;
+  justify-content: space-around;
+}
+.btnStyle {
+  margin: 15px;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#cell1 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+}
+#cell2 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#cell3 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-right: none;
+}
+#cell4 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+}
+#cell5 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#cell6 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-right: none;
+}
+#cell7 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+#cell8 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+#cell9 {
+  border: 5px solid #333333;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: plum; */
+    background: linear-gradient(270deg, #373b44, #4286f4);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .gameHeading {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+  #plyaersturn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .score {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .players {
+    display: flex;
+    flex-direction: row;
+    margin: 7px;
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+  
+  .txtPlayer {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+  .gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 250px;
+  }
+  .cell {
+    background-color: #fff;
+    font-family: "Permanent Marker", cursive;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 2px solid #333333;
+    cursor: pointer;
+    line-height: 80px;
+    font-size: 60px;
+  }
+  #result {
+    font-size: 0.7rem;
+  }
+  .score {
+    font-size: 0.7rem;
+  }
+}

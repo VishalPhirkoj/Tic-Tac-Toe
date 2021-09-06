@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- <link rel="icon" href="./pngwing.png" type="image/icon type"> -->
+    <link rel="icon" href="./237.png" type="image/icon type">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="gameHeading">Tic Tac Toe</h1>
+    <div class="players">
+        <input type="text" class="txtPlayer" name="plyaerX" id="plyaerX" placeholder="PlayerX Name" >
+        <input type="text" class="txtPlayer" name="plyaerO" id="plyaerO" placeholder="PlayerO Name">
+    </div>
+    <h1 id="plyaersturn">Click on any cell to start...!!</h1>
+    <div class="gameContainer" id="gameBoard" >
+        <div data-cell-index="1" id="cell1" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="2" id="cell2" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="3" id="cell3" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="4" id="cell4" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="5" id="cell5" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="6" id="cell6" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="7" id="cell7" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="8" id="cell8" class="cell" onClick="player(this.id)"></div>
+        <div data-cell-index="9" id="cell9" class="cell" onClick="player(this.id)"></div>
+    </div>
+    <h1 id="result"> &nbsp; </h1>
+    <div class="btnGrp">
+        <button type="reset" class="btnStyle" onclick="reset()">Reset</button>
+        <button type="reset" class="btnStyle" onclick="newGame()">New Game</button>
+    </div>
+    <div class="score">
+        <!-- <h2 id="scoreXX">0</h2>
+        <h2 id="scoreOO">0</h2>
+        <hr> -->
+        <h1 class="scoreShow">Player X Score: <span id="result1">0</span> </h1>
+        <h1 class="scoreShow">Player O Score: <span id="result2">0</span> </h1>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
