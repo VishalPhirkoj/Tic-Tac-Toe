@@ -32,6 +32,7 @@ function player(clicked_id) {
       if (!checkWinner() && count > 9) {
         console.log("Tie");
         //alert(`Game is Tie`);
+        // this is for Game Tie
         document.getElementById("result").innerText = `Game is Tie..!!`;
       }
       currentPlayer = currentPlayer == "X" ? "O" : "X";
